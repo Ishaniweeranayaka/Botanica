@@ -16,21 +16,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
     </style>
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
 
     <!-- css files -->
     <link href="<?php echo base_url('css/bootstrap.css') ?>" rel='stylesheet' type='text/css'/><!-- bootstrap css -->
     <link href="<?php echo base_url('css/style.css') ?>" rel='stylesheet' type='text/css'/><!-- custom css -->
     <link href="<?php echo base_url('css/font-awesome.min.css') ?>" rel="stylesheet"><!-- fontawesome css -->
     <!-- //css files -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('plugin/holdon/HoldOn.min.css'); ?>"/>
 
     <link href="<?php echo base_url('css/css_slider.css') ?>" type="text/css" rel="stylesheet" media="all">
 
@@ -39,11 +31,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
     <!-- //google fonts -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('plugin/holdon/HoldOn.min.js'); ?>"></script>
 </head>
+
 <body>
 
-<!-- header -->
+<script>
+    HoldOn.open({
+        theme: "sk-cube-grid",//If not given or inexistent theme throws default theme , sk-bounce
+        message: "<div style='font-size: 13px;'> Loading, Please wait </div><div id='loaderDivContent'></div>",
+        content: 'custom', // If theme is set to "custom", this property is available
+        textColor: "white" // Change the font color of the message
+    });
+    setTimeout(function(){ HoldOn.close(); }, 1600);
+
+
+
+    </script>
+
+
+    <!-- header -->
 <header>
     <div class="container">
         <!-- nav -->

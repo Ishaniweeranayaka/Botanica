@@ -1,3 +1,6 @@
+
+
+
 <section class="banner_w3lspvt" id="home">
     <div class="csslider infinity" id="slider1">
         <?php

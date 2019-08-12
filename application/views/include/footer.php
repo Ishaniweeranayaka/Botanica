@@ -63,5 +63,20 @@
     function refreshpage() {
         location.reload();
     }
+    addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    function startLoad() {
+        HoldOn.open({
+            theme: "sk-cube-grid",//If not given or inexistent theme throws default theme , sk-bounce
+            message: "<div style='font-size: 13px;'> Loading, Please wait </div><div id='loaderDivContent'></div>",
+            content: 'test', // If theme is set to "custom", this property is available
+            textColor: "white" // Change the font color of the message
+        });
+    }
 </script>
 
