@@ -1,106 +1,25 @@
-
-<!-- banner -->
-<div class="inner-banner" id="home">
+<div class="inner-banner"
+     style="background: url(<?php echo base_url($about_us['content']['Image']) ?>) no-repeat center;" id="home">
     <div class="container">
     </div>
 </div>
-<!-- //banner -->
 
-<!-- about -->
 <section class="about py-5" id="about">
-  >
-        <!-- core values -->
-        <section class="core-value py-5">
-            <div class="container py-md-4">
-                <h3 class="heading mb-sm-5 mb-4 text-center"> Our Core Values</h3>
-                <div class="row core-grids">
-                    <div class="col-lg-6 core-left">
-                        <img src="images/core.jpg" class="img-fliud" alt="" />
-                    </div>
-                    <div class="col-lg-6 core-right">
-                        <h4 class="mt-4">Improving Agriculture, Improving Lives, Cultivating New Crops To Make Farmers Increase Profit.</h4>
-                        <p class="mt-3">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam.
-                            Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo
-                            gravida porttitor. Aenean posuere lacus quis.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- core values -->
-            <section class="core-value py-5">
-                <div class="container py-md-4">
-                    <h3 class="heading mb-sm-5 mb-4 text-center"> Our Core Values</h3>
-                    <div class="row core-grids">
-                        <div class="col-lg-6 core-left">
-                            <img src="images/core.jpg" class="img-fliud" alt="" />
-                        </div>
-                        <div class="col-lg-6 core-right">
-                            <h4 class="mt-4">Improving Agriculture, Improving Lives, Cultivating New Crops To Make Farmers Increase Profit.</h4>
-                            <p class="mt-3">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam.
-                                Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo
-                                gravida porttitor. Aenean posuere lacus quis.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- core values -->
-                <section class="core-value py-5">
-                    <div class="container py-md-4">
-                        <h3 class="heading mb-sm-5 mb-4 text-center"> Our Core Values</h3>
-                        <div class="row core-grids">
-                            <div class="col-lg-6 core-left">
-                                <img src="images/core.jpg" class="img-fliud" alt="" />
-                            </div>
-                            <div class="col-lg-6 core-right">
-                                <h4 class="mt-4">Improving Agriculture, Improving Lives, Cultivating New Crops To Make Farmers Increase Profit.</h4>
-                                <p class="mt-3">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam.
-                                    Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo
-                                    gravida porttitor. Aenean posuere lacus quis.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- core values -->
-                    <section class="core-value py-5">
-                        <div class="container py-md-4">
-                            <h3 class="heading mb-sm-5 mb-4 text-center"> Our Core Values</h3>
-                            <div class="row core-grids">
-                                <div class="col-lg-6 core-left">
-                                    <img src="images/core.jpg" class="img-fliud" alt="" />
-                                </div>
-                                <div class="col-lg-6 core-right">
-                                    <h4 class="mt-4">Improving Agriculture, Improving Lives, Cultivating New Crops To Make Farmers Increase Profit.</h4>
-                                    <p class="mt-3">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam.
-                                        Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo
-                                        gravida porttitor. Aenean posuere lacus quis.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- //core values -->
-                </section>
-                <!-- //core values -->
-            </section>
-            <!-- //core values -->
-        </section>
-        <!-- //core values -->
-    </div>
-</section>
-<!-- //about -->
-
-<!-- about bottom -->
-<div class="abt_bottom py-md-5">
-    <div class="container py-md-4 py-5">
+    <div class="container py-lg-5 py-sm-3">
+        <h3 class="heading mb-sm-5 mb-4 text-center"><?php echo $about_us['content']['Page_Heading'] ?></h3>
         <div class="row">
-            <div class="col-md-9">
-                <h4 class="abt-text text-capitalize">We give you Care tips and Ideas on what style suits your garden</h4>
+            <div class="col-lg-6 about-left">
+                <h5 class="mb-3"><?php echo $about_us['content']['Heading'] ?></h5>
+                <h3 class="mb-lg-4 mb-2"><?php echo $about_us['content']['Sub_heading'] ?> </h3>
+                <h4 class=""><?php echo $about_us['content']['Sub_heading02'] ?></h4>
             </div>
-            <div class="col-md-3">
-                <a href="services.html" class="text-capitalize serv_link btn">our Services</a>
+            <div class="col-lg-6 pl-xl-5 mt-lg-0 mt-4 about-right">
+                <p><?php echo $about_us['content']['Description'] ?> </p>
+                <p class="pt-3 mt-3 border-top"><?php echo $about_us['content']['Description_02'] ?></p>
             </div>
         </div>
     </div>
-</div>
-<!-- //about bottom -->
-
-<!-- stats -->
+</section>
 <section class="w3_stats" id="stats">
     <div class="overlay-clr py-sm-5">
         <div class="container py-5">
@@ -139,191 +58,134 @@
         </div>
     </div>
 </section>
-<!-- //stats -->
 
-<!-- team -->
-<div class="team py-5" id="team">
-    <div class="container py-lg-3">
-        <h3 class="heading mb-sm-5 mb-4 text-center"> Our Team</h3>
-        <div class="row team-bottom text-center">
-            <div class="col-lg-3 col-sm-6 team-grid">
-                <img src="images/team1.jpg" class="img-fluid" alt="">
-                <div class="caption">
-                    <div class="team-text">
-                        <h4>Mack Joe</h4>
-                    </div>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-facebook" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-twitter" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-google-plus" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com">
-                                <span class="fa fa-envelope-open" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 team-grid mt-sm-0 mt-5">
-                <img src="images/team2.jpg" class="img-fluid" alt="">
-                <div class="caption">
-                    <div class="team-text">
-                        <h4>Cruz Deo</h4>
-                    </div>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-facebook" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-twitter" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-google-plus" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com">
-                                <span class="fa fa-envelope-open" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 team-grid mt-lg-0 mt-5">
-                <img src="images/team3.jpg" class="img-fluid" alt="">
-                <div class="caption">
-                    <div class="team-text">
-                        <h4>Rochy Jae</h4>
-                    </div>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-facebook" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-twitter" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-google-plus" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com">
-                                <span class="fa fa-envelope-open" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 team-grid  mt-lg-0 mt-5">
-                <img src="images/team4.jpg" class="img-fluid" alt="">
-                <div class="caption">
-                    <div class="team-text">
-                        <h4>Rojo Poy</h4>
-                    </div>
-                    <ul class="mt-2">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-facebook" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-twitter" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-google-plus" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com">
-                                <span class="fa fa-envelope-open" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //team -->
+<section class="reviews">
+    <h4 class="main-title text-center font-weight-bold pb-4">WHAT CUSTOMERS SAY</h4>
 
-<!-- feedback -->
-<section class="news py-5">
-    <div class="container py-xl-5 py-lg-3">
-        <h3 class="heading mb-sm-5 mb-4 text-center">Clients Testimonials</h3>
-        <div class="row">
-            <div class="col-lg-4 item">
-                <div class="feedback-info pt-5 pb-4 px-4">
-                    <h4 class="mb-3">Best Harvesting Company
-                    </h4>
-                    <p><span class="fa fa-quote-left text-color mr-2"></span> Vulputate ac met semper varius Nullam consequat sapien sed leot cursus rhoncus. Nullam dui mi.</p>
-                    <div class="feedback-grids mt-3">
-                        <div class="feedback-img">
-                            <img src="images/te1.jpg" class="img-fluid rounded-circle" alt="" />
+    <div class="container">
+        <div class="owl-carousel">
+
+            <!-- card -->
+            <div class="item">
+                <div class=" card">
+                    <div class="row">
+                        <div class="col-xs-7 col-7 info-col">
+                            <h4 class="title">JOHN CHARLES</h4>
+                            <h6 class="sub-title">Creative Marketer</h6>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="feedback-img-info">
-                            <h5>Mary Jane</h5>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
+                            <div class="user" style="background-image: url('images/user.jpg')"></div>
                         </div>
-                        <div class="clearfix"> </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
+                                voluptatibus
+                                qui facere aut!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 item-2 mt-lg-0 mt-4">
-                <div class="feedback-info pt-5 pb-4 px-4">
-                    <h4 class="mb-3">Best Agricultural farm
-                    </h4>
-                    <p><span class="fa fa-quote-left text-color mr-2"></span> Vulputate ac met semper varius Nullam consequat sapien sed leot cursus rhoncus. Nullam dui mi.</p>
-                    <div class="feedback-grids mt-3">
-                        <div class="feedback-img">
-                            <img src="images/te2.jpg" class="img-fluid rounded-circle" alt="" />
+
+
+            <!-- card -->
+            <div class="item">
+                <div class=" card">
+                    <div class="row">
+                        <div class="col-xs-7 col-7 info-col">
+                            <h4 class="title">JOHN CHARLES</h4>
+                            <h6 class="sub-title">Creative Marketer</h6>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="feedback-img-info">
-                            <h5>Olivia Ruth</h5>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
+                            <div class="user" style="background-image: url('images/user-2.jpg')"></div>
                         </div>
-                        <div class="clearfix"> </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
+                                voluptatibus
+                                qui facere aut!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 item mt-lg-0 mt-4">
-                <div class="feedback-info pt-5 pb-4 px-4">
-                    <h4 class="mb-3">Modern Cultivation
-                    </h4>
-                    <p><span class="fa fa-quote-left text-color mr-2"></span> Vulputate ac met semper varius Nullam consequat sapien sed leot cursus rhoncus. Nullam dui mi.</p>
-                    <div class="feedback-grids mt-3">
-                        <div class="feedback-img">
-                            <img src="images/te3.jpg" class="img-fluid rounded-circle" alt="" />
+
+
+            <!-- card -->
+            <div class="item">
+                <div class=" card">
+                    <div class="row">
+                        <div class="col-xs-7 col-7 info-col">
+                            <h4 class="title">JOHN CHARLES</h4>
+                            <h6 class="sub-title">Creative Marketer</h6>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="feedback-img-info">
-                            <h5>Blake Joe</h5>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
+                            <div class="user" style="background-image: url('images/user-1.jpg')"></div>
                         </div>
-                        <div class="clearfix"> </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
+                                voluptatibus
+                                qui facere aut!</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </section>
+<!-- Section: Testimonials v.2

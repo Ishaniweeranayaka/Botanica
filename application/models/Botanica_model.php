@@ -52,6 +52,11 @@ class Botanica_model extends CI_Model
         $homepagedetail = $this->db->query("SELECT * FROM `botanica_detail` where Detail_Type = 6")->result_array();
         return $homepagedetail;
     }
+    function fetch_abountus()
+    {
+        $fetch_aboutus = $this->db->query("SELECT * FROM `botanica_detail` WHERE Detail_Type = 7")->row_array();
+        return $fetch_aboutus;
+    }
 
 }
 ?>

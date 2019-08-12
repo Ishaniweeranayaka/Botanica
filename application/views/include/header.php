@@ -25,6 +25,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('plugin/holdon/HoldOn.min.css'); ?>"/>
 
     <link href="<?php echo base_url('css/css_slider.css') ?>" type="text/css" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('css/owl.carousel.min.css') ?>" type="text/css" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('css/slider.css') ?>" type="text/css" rel="stylesheet" media="all">
 
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
@@ -32,6 +34,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
     <!-- //google fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="<?php echo base_url('js/owl.carousel.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/bootstrap.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('plugin/holdon/HoldOn.min.js'); ?>"></script>
 </head>
 
