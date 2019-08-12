@@ -47,6 +47,11 @@ class Botanica_model extends CI_Model
         $socialmedia = $this->db->query("SELECT * FROM `botanica_socailmedia` where Active_YN = 1")->result_array();
         return $socialmedia;
     }
+    function fetch_home_detail()
+    {
+        $homepagedetail = $this->db->query("SELECT * FROM `botanica_detail` where Detail_Type = 6")->result_array();
+        return $homepagedetail;
+    }
 
 }
 ?>

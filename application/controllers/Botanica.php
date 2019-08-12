@@ -23,10 +23,12 @@ class Botanica extends CI_Controller
         $data['home']['our_process'] = $this->Botanica_model->fetch_our_process();
         $data['home']['turn_your_garden'] = $this->Botanica_model->fetch_turn_your_garden();
         $data['home']['fetch_last_detail'] = $this->Botanica_model->fetch_last_detail();
+        $data['home']['fetch_home_detail'] = $this->Botanica_model->fetch_home_detail();
         $data['page']['pageno'] = 1;
         $data['page']['pageurl'] = 'home';
         $data['page']['footer'] = $this->Botanica_model->fetch_companydetails();
         $data['page']['socialmedia'] = $this->Botanica_model->fetch_socail_media();
+
         $this->load->view('include/template', $data);
     }
 
