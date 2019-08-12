@@ -3,8 +3,8 @@
     <div class="container py-md-3">
         <!-- logo -->
         <h2 class="logo2 text-center">
-            <a href="index.html">
-                <span class="fa fa-leaf"></span> Botanica
+            <a href="<?php echo site_url($page['pageurl']) ?>">
+                <span class="fa fa-leaf"></span> <?php echo $page['footer']['company_name'] ?>
             </a>
         </h2>
         <!-- //logo -->
@@ -13,18 +13,18 @@
             <ul>
                 <li>
                     <p>
-                        <span class="fa fa-map-marker mr-2"></span>212/B, Nelum Place, Kalapaluwawa Road, Rajagiriya.
+                        <span class="fa fa-map-marker mr-2"></span><?php echo $page['footer']['company_address'] ?>
                     </p>
                 </li>
                 <li class="mx-4">
                     <p>
-                        <span class="fa fa-phone mr-2"></span>011 279 2889.
+                        <span class="fa fa-phone mr-2"></span><?php echo $page['footer']['Company_tele_01'] ?>
                     </p>
                 </li>
                 <li>
                     <p class="text-wh">
                         <span class="fa fa-envelope-open mr-2"></span>
-                        <a href="mailto:info@example.com">info@lakibotanicagardens.com</a>
+                        <a href="mailto:info@example.com"><?php echo $page['footer']['email'] ?></a>
                     </p>
                 </li>
             </ul>
@@ -33,43 +33,19 @@
         <!-- social icons -->
         <div class="footercopy-social my-4">
             <ul>
+                <?php foreach($page['socialmedia'] as $val){ ?>
                 <li>
-                    <a href="#">
-                        <span class="fa fa-facebook-square"></span>
+                    <a target="_blank" href="<?php echo $val['Social_link']?>">
+                        <span class="<?php echo $val['Social_Icon']?>"></span>
                     </a>
                 </li>
-                <li class="mx-2">
-                    <a href="#">
-                        <span class="fa fa-twitter-square"></span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">
-                        <span class="fa fa-google-plus-square"></span>
-                    </a>
-                </li>
-                <li class="mx-2">
-                    <a href="#">
-                        <span class="fa fa-linkedin-square"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="fa fa-rss-square"></span>
-                    </a>
-                </li>
-                <li class="ml-2">
-                    <a href="#">
-                        <span class="fa fa-pinterest-square"></span>
-                    </a>
-                </li>
+                <?php }?>
             </ul>
         </div>
         <!-- //social icons -->
         <!-- copyright -->
         <div class="w3l-copy text-center">
-            <p class="text-da">© 2019 Agro Harvest. All rights reserved | Design by
-                <a href="http://w3layouts.com/">W3layouts</a>
+            <p class="text-da">© 2019 Botanica. All rights reserved
             </p>
         </div>
         <!-- //copyright -->

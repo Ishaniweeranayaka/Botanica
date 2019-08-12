@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Botanica Category Flat Bootstrap Responsive Web Template | Home :: w3layouts</title>
+    <title>Botanica</title>
     <!-- for-mobile-apps -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- nav -->
         <nav class="py-4 d-lg-flex">
             <div id="logo">
-                <h1><a onclick="refreshpage()"><span class="fa fa-leaf"></span> Botanica</a></h1>
+                <h1><a onclick="refreshpage()"><span class="fa fa-leaf"></span>Botanica</a></h1>
             </div>
             <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
             <input type="checkbox" id="drop"/>
@@ -65,16 +65,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                         <li><a href="<?php echo site_url('serveice_sub/Landscaping_Design') ?>">Landscaping Design</a>
                         </li>
+                        <hr>
                         <li><a href="<?php echo site_url('serveice_sub/Hardscaping') ?>">HardScaping</a></li>
                         </li>
+                        <hr>
                         <li><a href="<?php echo site_url('serveice_sub/Water_Features') ?>">Water Features</a></li>
                         </li>
+                        <hr>
                         <li><a href="<?php echo site_url('serveice_sub/Water_Features') ?>">Root Boling</a></li>
                     </ul>
                 </li>
                 <li class="mr-lg-4 mr-2"><a href="comingsoon.html">Project</a></li>
                 <li class="mr-lg-4 mr-2"><a href="contact.html">Contact</a></li>
-                <li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span>011 279 2889</span></li>
+                <li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span><?php echo $page['footer']['Company_tele_01'] ?></span></li>
             </ul>
         </nav>
         <!-- //nav -->
