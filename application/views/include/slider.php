@@ -60,6 +60,7 @@
         <div class="container py-md-4">
             <h3 class="heading text-center mb-4"><?php echo $home['fetch_home_detail'][0]['Page_Heading'] ?></h3>
             <p class="about-text mx-auto text-center"><?php echo $home['fetch_home_detail'][0]['Description'] ?></p>
+            <?php if(!empty($home['fetch_home_detail'][0]['Page_icon'])){?>
             <div class="feature-grids row mt-5 text-center">
                 <?php foreach($home['fetch_home_detail'] as $val){?>
                 <div class="col-lg-4 col-md-6 ">
@@ -75,6 +76,7 @@
                 </div>
                 <?php }?>
             </div>
+            <?php }?>
         </div>
     </section>
 <?php } else { ?>
