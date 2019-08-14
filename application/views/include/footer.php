@@ -73,6 +73,18 @@
     function refreshpage() {
         location.reload();
     }
+
+    $(document).ready(function() {
+
+        var owl = $("#owl-demo");
+
+        owl.owlCarousel({
+            navigation : true,
+            singleItem : true,
+            transitionStyle : "fade"
+        });
+
+    });
     addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
