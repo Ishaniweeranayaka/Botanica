@@ -20,172 +20,50 @@
         </div>
     </div>
 </section>
-<section class="w3_stats" id="stats">
-    <div class="overlay-clr py-sm-5">
-        <div class="container py-5">
-            <div class="w3-stats">
-                <div class="row">
-                    <div class="col-lg-3 col-6">
-                        <div class="counter">
-                            <span class="fa fa-smile-o"></span>
-                            <div class="timer count-title count-number mt-2">5100</div>
-                            <p class="count-text text-uppercase">happy customers</p>
+
+
+<?php
+
+if (!empty($about_us['fetch_customer_review'])) { ?>
+    <hr style="width: 90%;">
+    <section class="reviews">
+        <h4 class="main-title text-center font-weight-bold pb-4"><?php echo $about_us['what_cus']['Page_Heading'] ?></h4>
+
+        <div class="container">
+            <div class="owl-carousel">
+                    <?php foreach ($about_us['fetch_customer_review'] as $val) { ?>
+                    <div class="item">
+                        <div class=" card">
+                            <div class="row">
+                                <div class="col-xs-7 col-7 info-col">
+                                    <h4 class="title"><?php echo $val['Customer_Name']?></h4>
+                                    <h6 class="sub-title"><?php echo $val['Customer_Position']?></h6>
+
+
+                                    <ul>
+                                        <?php for($x=0;$x<$val['Customer_Rating'];$x++){?>
+                                        <li>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <?php }?>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
+                                    <div class="user" style="background-image: url(<?php echo base_url($val['Customer_Image'])?>)"></div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
+                                    <p><?php echo $val['Customer_Review'] ?></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="counter">
-                            <span class="fa fa-pagelines"></span>
-                            <div class="timer count-title count-number mt-2">2271</div>
-                            <p class="count-text text-uppercase">Planted Trees</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 mt-lg-0 mt-5">
-                        <div class="counter">
-                            <span class="fa fa-users"></span>
-                            <div class="timer count-title count-number mt-2">1120+</div>
-                            <p class="count-text text-uppercase">Farmers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 mt-lg-0 mt-5">
-                        <div class="counter">
-                            <span class="fa fa-leaf"></span>
-                            <div class="timer count-title count-number mt-2">2690</div>
-                            <p class="count-text text-uppercase">Products</p>
-                        </div>
-                    </div>
-                </div>
+                    <?php }?>
+
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="reviews">
-    <h4 class="main-title text-center font-weight-bold pb-4">WHAT CUSTOMERS SAY</h4>
-
-    <div class="container">
-        <div class="owl-carousel">
-
-            <!-- card -->
-            <div class="item">
-                <div class=" card">
-                    <div class="row">
-                        <div class="col-xs-7 col-7 info-col">
-                            <h4 class="title">JOHN CHARLES</h4>
-                            <h6 class="sub-title">Creative Marketer</h6>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                            <div class="user" style="background-image: url('images/user.jpg')"></div>
-                        </div>
-
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
-                                voluptatibus
-                                qui facere aut!</p>
-                        </div>
-                    </div>
-                </div>
             </div>
+    </section>
+<?php } ?>
 
-
-            <!-- card -->
-            <div class="item">
-                <div class=" card">
-                    <div class="row">
-                        <div class="col-xs-7 col-7 info-col">
-                            <h4 class="title">JOHN CHARLES</h4>
-                            <h6 class="sub-title">Creative Marketer</h6>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                            <div class="user" style="background-image: url('images/user-2.jpg')"></div>
-                        </div>
-
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
-                                voluptatibus
-                                qui facere aut!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- card -->
-            <div class="item">
-                <div class=" card">
-                    <div class="row">
-                        <div class="col-xs-7 col-7 info-col">
-                            <h4 class="title">JOHN CHARLES</h4>
-                            <h6 class="sub-title">Creative Marketer</h6>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                            <div class="user" style="background-image: url('images/user-1.jpg')"></div>
-                        </div>
-
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
-                                voluptatibus
-                                qui facere aut!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-<!-- Section: Testimonials v.2

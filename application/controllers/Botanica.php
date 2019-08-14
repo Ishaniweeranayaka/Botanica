@@ -38,7 +38,9 @@ class Botanica extends CI_Controller
         $data['page']['pageurl'] = 'about_us';
         $data['page']['socialmedia'] = $this->Botanica_model->fetch_socail_media();
         $data['page']['footer'] = $this->Botanica_model->fetch_companydetails();
+        $data['about_us']['what_cus'] = $this->Botanica_model->fetch_what_cus();
         $data['about_us']['content'] = $this->Botanica_model->fetch_abountus();
+        $data['about_us']['fetch_customer_review'] = $this->Botanica_model->fetch_customerfeedback();
         $this->load->view('include/template', $data);
     }
 

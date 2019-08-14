@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Botanica</title>
+    <title><?php echo $page['footer']['company_name'] ?></title>
     <!-- for-mobile-apps -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- nav -->
         <nav class="py-4 d-lg-flex">
             <div id="logo">
-                <h1><a onclick="refreshpage()"><span class="fa fa-leaf"></span>Botanica</a></h1>
+                <h1><a onclick="refreshpage()"><span class="fa fa-leaf"></span><?php echo $page['footer']['company_name'] ?></a></h1>
             </div>
             <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
             <input type="checkbox" id="drop"/>
