@@ -54,7 +54,7 @@
         <!-- //social icons -->
         <!-- copyright -->
         <div class="w3l-copy text-center">
-            <p class="text-da">© 2019 <?php echo $page['footer']['company_name'] ?>. All rights reserved
+            <p class="text-da">© <?php echo date('Y') ?> <?php echo $page['footer']['company_name'] ?>. All rights reserved
             </p>
         </div>
         <!-- //copyright -->
