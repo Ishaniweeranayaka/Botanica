@@ -75,7 +75,7 @@ class Botanica_model extends CI_Model
 
     function fetch_customerfeedback()
     {
-        $fetch_customerfeedback = $this->db->query(" SELECT * FROM `botanica_customerreview`")->result_array();
+        $fetch_customerfeedback = $this->db->query(" SELECT * FROM `botanica_customerreview` where Is_Active = 1")->result_array();
         return $fetch_customerfeedback;
 
     }
