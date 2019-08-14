@@ -61,7 +61,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- nav -->
         <nav class="py-4 d-lg-flex">
             <div id="logo">
+                  <?php if(!empty($page['footer']['company_name'])){?>
                 <h1><a onclick="refreshpage()"><span class="fa fa-leaf"></span><?php echo $page['footer']['company_name'] ?></a></h1>
+                 <?php }?>
             </div>
             <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
             <input type="checkbox" id="drop"/>
@@ -89,7 +91,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </li>
                 <li class="mr-lg-4 mr-2"><a href="comingsoon.html">Project</a></li>
                 <li class="mr-lg-4 mr-2"><a href="contact.html">Contact</a></li>
-                <li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span><?php echo $page['footer']['Company_tele_01'] ?></span></li>
+                <li class="mr-lg-4 mr-2">
+                    <?php if(!empty($page['footer']['Company_tele_01'])){?>
+                    <span><span class="fa fa-phone"></span><?php echo $page['footer']['Company_tele_01'] ?></span>
+                    <?php }?>
+                </li>
             </ul>
         </nav>
         <!-- //nav -->

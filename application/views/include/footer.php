@@ -3,29 +3,38 @@
     <div class="container py-md-3">
         <!-- logo -->
         <h2 class="logo2 text-center">
+            <?php if(!empty($page['footer']['company_name'])){?>
             <a href="<?php echo site_url($page['pageurl']) ?>">
                 <span class="fa fa-leaf"></span> <?php echo $page['footer']['company_name'] ?>
             </a>
+            <?php }?>
         </h2>
         <!-- //logo -->
         <!-- address -->
         <div class="contact-left-footer mt-4">
             <ul>
                 <li>
+                    <?php if(!empty($page['footer']['company_address'])){?>
                     <p>
                         <span class="fa fa-map-marker mr-2"></span><?php echo $page['footer']['company_address'] ?>
                     </p>
+                    <?php }?>
                 </li>
                 <li class="mx-4">
+                     <?php if(!empty($page['footer']['Company_tele_01'])){?>
                     <p>
                         <span class="fa fa-phone mr-2"></span><?php echo $page['footer']['Company_tele_01'] ?>
                     </p>
+                   <?php }?>
                 </li>
                 <li>
-                    <p class="text-wh">
+                 <?php if(!empty($page['footer']['email'])){?>
+                     <p class="text-wh">
                         <span class="fa fa-envelope-open mr-2"></span>
                         <a href="mailto:info@example.com"><?php echo $page['footer']['email'] ?></a>
                     </p>
+                   <?php }?>
+
                 </li>
             </ul>
         </div>
@@ -45,7 +54,7 @@
         <!-- //social icons -->
         <!-- copyright -->
         <div class="w3l-copy text-center">
-            <p class="text-da">© 2019 Botanica. All rights reserved
+            <p class="text-da">© 2019 <?php echo $page['footer']['company_name'] ?>. All rights reserved
             </p>
         </div>
         <!-- //copyright -->
